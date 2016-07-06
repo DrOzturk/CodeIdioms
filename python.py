@@ -10,3 +10,15 @@ df = pd.DataFrame(
 3    7   40  -50
 '''
 
+len(df.index)
+# 4
+
+for i in range(0,len(df.index)): # range in python doesn't include the end parameter
+   print i
+'''
+prints 
+0
+1
+2
+3
+'''
