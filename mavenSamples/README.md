@@ -1,3 +1,3 @@
-'''bash
+```bash
 mvn archetype:generate
-'''
+```
