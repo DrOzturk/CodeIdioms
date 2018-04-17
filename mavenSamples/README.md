@@ -1,0 +1,3 @@
+'''bash
+mvn archetype:generate
+'''
