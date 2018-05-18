@@ -56,5 +56,5 @@ docker push drozturk/hello-ozgur:0.0.1
 Now, you can run your app on *any machine* with `docker run` command:
 ```bash
 #docker run -p 4000:80 username/repository:tag
-docker run -p 4000:80 john/get-started:part2
+docker run -p 4000:80 drozturk/hello-ozgur:0.0.1
 ```
