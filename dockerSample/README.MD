@@ -2,9 +2,9 @@
 We are following this tutorial: https://docs.docker.com/get-started/part2/#build-the-app
 
 ## Build Image
-Build this docker image with the app, running this:
+Build this docker image with the app, giving hellow as its tag running this:
 ```bash
-docker build -t friendlyhello .
+docker build -t hellow .
 ```
 See result:
 ```bash
@@ -13,7 +13,7 @@ docker image ls
 ## Run container with the image
 Run the app, mapping your machine’s port 4000 to the container’s published port 80 using -p:
 ```bash
-docker run -p 4000:80 friendlyhello 
+docker run -p 4000:80 hellow 
 ```
 
 Visit page:
@@ -23,7 +23,7 @@ curl http://localhost:4000
 
 Running the app in the background, in detached mode:
 ```bash
-docker run -d -p 4000:80 friendlyhello
+docker run -d -p 4000:80 hellow
 ```
 ## Manage Containers 
 List the running containers:
@@ -34,4 +34,27 @@ docker container ls
 End the process, using the CONTAINER ID from above ls, like so:
 ```bash
 docker container stop <CONTAINER ID>
+```
+## Upload to a Repo
+ex: login to dockerhub
+```bash
+docker login
+```
+Then, rename repository with <YOUR_DOCKERHUB_NAME>/image-name:tag (tag used as version) 
+and upload:
+```bash
+# ex: docker tag old_image_name username/new_image_name:tag
+# ex my dockerhub name is drozturk
+docker tag hellow drozturk/hello-ozgur:0.0.1
+# check the new tag:
+docker image ls
+# Publish the image
+docker push drozturk/hello-ozgur:0.0.1
+```
+
+## Download and run
+Now, you can run your app on *any machine* with `docker run` command:
+```bash
+#docker run -p 4000:80 username/repository:tag
+docker run -p 4000:80 john/get-started:part2
 ```
