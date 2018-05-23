@@ -13,7 +13,7 @@ docker image ls
 ## Run container with the image
 Run the app, mapping your machine’s port 4000 to the container’s published port 80 using -p:
 ```bash
-docker run -p 4000:80 hellow 
+docker run -p 4000:80 hellow
 ```
 
 Visit page:
@@ -25,7 +25,7 @@ Running the app in the background, in detached mode:
 ```bash
 docker run -d -p 4000:80 hellow
 ```
-## Manage Containers 
+## Manage Containers
 List the running containers:
 ```bash
 docker container ls
@@ -40,7 +40,7 @@ ex: login to dockerhub
 ```bash
 docker login
 ```
-Then, rename repository with <YOUR_DOCKERHUB_NAME>/image-name:tag (tag used as version) 
+Then, rename repository with <YOUR_DOCKERHUB_NAME>/image-name:tag (tag used as version)
 and upload:
 ```bash
 # ex: docker tag old_image_name username/new_image_name:tag
@@ -57,4 +57,18 @@ Now, you can run your app on *any machine* with `docker run` command:
 ```bash
 #docker run -p 4000:80 username/repository:tag
 docker run -p 4000:80 drozturk/hello-ozgur:0.0.1
+```
+
+## Stop Restart
+```bash
+docker stop <ContainerId>
+docker start <ContainerId>
+```
+
+## Update Image with the Changes
+Create a new image from container with new apps installed etc.
+Don't use this much (maybe for experimenting), rather edit Dockerfile!
+ 
+```bash
+docker commit <ContainerId>  <repoName>/<imageName>:<version>
 ```
