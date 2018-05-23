@@ -3,6 +3,8 @@
 follows: https://www.youtube.com/watch?v=jpkZGXrhZJ8
 forked from: https://github.com/iamaaronknight/luigi-hello-world
 
+continue work from: https://youtu.be/jpkZGXrhZJ8?t=3940
+
 This is just a simple 'Hello World' example to demonstrate the use of Luigi.
 
 It will create a file that says "Hello", another that says "World", and concatenate the contents of those files into a third that says "Hello World". 
