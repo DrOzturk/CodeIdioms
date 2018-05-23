@@ -11,12 +11,13 @@ See result:
 docker image ls
 ```
 ## Run container with the image
-Run the app, mapping your machine’s port 4000 to the container’s published port 80 using -p:
+Run is actually "create + run". Creates *new* container based on image, then runs the *new* container.
+This -p flag maps your machine’s port 4000 to the container’s published port 80 :
 ```bash
 docker run -p 4000:80 hellow
 ```
 
-Visit page:
+You visit this link to send request to the app:
 ```bash
 curl http://localhost:4000
 ```
@@ -68,7 +69,7 @@ docker start <ContainerId>
 ## Update Image with the Changes
 Create a new image from container with new apps installed etc.
 Don't use this much (maybe for experimenting), rather edit Dockerfile!
- 
+
 ```bash
 docker commit <ContainerId>  <repoName>/<imageName>:<version>
 ```
