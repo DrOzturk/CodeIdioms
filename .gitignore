@@ -2,3 +2,5 @@ dockerSample/.idea/
 mavenSamples/result/HelloMvnApp/.idea/
 .DS_Store
 dockerSample/~$cker CheatSheet.docx
+mavenSamples/result/HelloMvnApp/target/
+mavenSamples/result/HelloMvnApp/HelloMvnApp.iml
