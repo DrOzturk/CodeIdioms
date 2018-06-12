@@ -1,6 +1,9 @@
 # Docker Tutorial
 We are following this tutorial: https://docs.docker.com/get-started/part2/#build-the-app
 
+## Underlying Technologies
+Namespaces, control groups, and Union File System. 
+
 ## Build Image
 Build this docker image with the app, giving hellow as its tag running this:
 ```bash

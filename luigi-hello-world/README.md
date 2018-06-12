@@ -1,9 +1,9 @@
 # Luigi Example
 
-follows: https://www.youtube.com/watch?v=jpkZGXrhZJ8
+follows: https://youtu.be/jpkZGXrhZJ8?t=3940
 forked from: https://github.com/iamaaronknight/luigi-hello-world
 
-continue work from: https://youtu.be/jpkZGXrhZJ8?t=3940
+Adds pipenv to manage virtual environment.
 
 This is just a simple 'Hello World' example to demonstrate the use of Luigi.
 
