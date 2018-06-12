@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+     - "5000:5000"
+    volumes:
+     - .:/code
+#This is bind mount: a file or directory, full or relative path, on the host machine is mounted into a container.
+#Instead, use a volume, a new directory is created in Docker’s storage directory on the host,
+#and Docker manages that directory’s contents.
+  redis:
+    image: "redis:alpine"
