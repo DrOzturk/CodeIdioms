@@ -14,3 +14,12 @@ import importlib
 # if the module you loaded before was etl.helper
 importlib.reload(etl.helper)
 ```
+
+# Running Tests 
+## in iPython or iPython Notebook
+ex: if my test module inside etl package is etl.tests.test_load
+```python
+import etl.tests.test_load
+suite = unittest.TestLoader().loadTestsFromModule(etl.tests.test_load)
+unittest.TextTestRunner().run(suite)
+```
