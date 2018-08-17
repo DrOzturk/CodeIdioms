@@ -1,3 +1,9 @@
+THIS IS MOVED TO: 
+https://github.com/ATLD/docker_workshop
+
+PLEASE USE THAT FOR MORE UPDATED REPO!
+
+
 # Docker Tutorial
 We are following this tutorial: https://docs.docker.com/get-started/part2/#build-the-app
 
