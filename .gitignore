@@ -1,4 +1,6 @@
 .idea/
+*/.idea/
+DockerCompose/.idea/
 dockerSample/.idea/
 mavenSamples/result/HelloMvnApp/.idea/
 PythonBasics/.idea/
