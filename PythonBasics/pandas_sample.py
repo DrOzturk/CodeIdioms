@@ -1,4 +1,5 @@
 import pandas as pd
+# talk: https://www.youtube.com/watch?v=qy0fDqoMJx8
 
 values_df = pd.DataFrame({'AAA' : [4, 5, 6, 7], 'BBB' : [10, 20, 30, 40], 'CCC' : [100, 50, -30, -50]});
 '''
